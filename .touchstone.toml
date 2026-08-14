@@ -8,7 +8,7 @@ name = "root"
 path = "."
 
 [[validation.tasks]]
-name = "new-source-before-rollback"
+name = "old-source-rollback"
 target = "root"
-command = "printf new-source-before-rollback"
+command = "printf old-source-rollback"
 required = true
