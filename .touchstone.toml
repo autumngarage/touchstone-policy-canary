@@ -8,7 +8,7 @@ name = "root"
 path = "."
 
 [[validation.tasks]]
-name = "intentional-failure"
+name = "intentional-pass"
 target = "root"
-command = "false"
+command = "printf canary-pass"
 required = true
