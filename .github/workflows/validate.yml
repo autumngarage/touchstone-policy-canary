@@ -1,0 +1,15 @@
+name: local validate bypass attempt
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate (ubuntu-latest)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report local success
+        run: echo "local workflow passed"
