@@ -8,6 +8,7 @@ name = "root"
 path = "."
 
 [[validation.tasks]]
-name = "optional"
+name = "intentional-failure"
 target = "root"
-required = false
+command = "false"
+required = true
