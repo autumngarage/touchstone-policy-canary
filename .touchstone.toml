@@ -1,4 +1,13 @@
-schema = "one"
+schema = 1
 
 [validation]
 runtime = "bash"
+
+[[validation.targets]]
+name = "root"
+path = "."
+
+[[validation.tasks]]
+name = "optional"
+target = "root"
+required = false
