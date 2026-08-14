@@ -8,7 +8,7 @@ name = "root"
 path = "."
 
 [[validation.tasks]]
-name = "intentional-cancellation"
+name = "new-source-before-rollback"
 target = "root"
-command = "sleep 300"
+command = "printf new-source-before-rollback"
 required = true
